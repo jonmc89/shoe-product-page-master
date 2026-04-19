@@ -1,0 +1,57 @@
+/* || Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/* || Colours */
+
+:root {
+    --black: #000;
+    --grey: #394150;
+    --purple: #652cd1;
+    --mid-grey: #d2d5da;
+    --light-grey: #f3f4f6;
+    --off-white: #f9fafb;
+    --white: #fff;
+}
+
+/* || Typography */
+
+@font-face {
+    font-display: swap;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/outfit-v15-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/outfit-v15-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/outfit-v15-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/outfit-v15-latin-600.woff2") format("woff2");
+}
