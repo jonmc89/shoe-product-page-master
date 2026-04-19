@@ -218,8 +218,12 @@ button {
 }
 
 @media screen and (min-width: 90rem) {
+    body {
+        overflow: hidden;
+    }
     main {
         padding: 2.5rem;
+        grid-template-columns: 40% 50%;
     }
 
     .img-tablet {
@@ -230,5 +234,16 @@ button {
         display: block;
         width: 100%;
         height: auto;
+    }
+
+    .main-item-text,
+    .breadcrumb-text,
+    ul,
+    .item-details-container {
+        margin-block-end: 5rem;
+    }
+
+    .item-details-container {
+        width: 55%;
     }
 }
