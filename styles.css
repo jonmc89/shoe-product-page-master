@@ -101,7 +101,7 @@ main {
 
 h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: clamp(2rem, 5vw, 2.2rem);
     margin-block-end: 1.5rem;
 }
 
@@ -109,6 +109,8 @@ h1 {
     color: var(--black);
     line-height: 150%;
     margin-block-end: 1.25rem;
+    font-size: clamp(1rem, 5vw, 1.1rem);
+    max-width: 80%;
 }
 
 h2 {
@@ -157,18 +159,32 @@ button {
     width: 11.5rem;
     border-radius: 0.5rem;
     border: none;
+    cursor: pointer;
 }
 
 .add-to-cart {
     background-color: var(--purple);
     color: var(--white);
     font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background-color: var(--black);
 }
 
 .add-to-wishlist {
     border: 0.1rem solid var(--black);
     background-color: var(--white);
     font-weight: 600;
+    transition:
+        background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.add-to-wishlist:hover {
+    background-color: var(--grey);
+    color: var(--white);
 }
 
 /* || Media Queries */
@@ -223,7 +239,7 @@ button {
     }
     main {
         padding: 2.5rem;
-        grid-template-columns: 40% 50%;
+        grid-template-columns: 41% 50%;
     }
 
     .img-tablet {
@@ -236,11 +252,15 @@ button {
         height: auto;
     }
 
+    h1 {
+        width: 60%;
+    }
+
     .main-item-text,
     .breadcrumb-text,
     ul,
     .item-details-container {
-        margin-block-end: 5rem;
+        margin-block-end: 4rem;
     }
 
     .item-details-container {
